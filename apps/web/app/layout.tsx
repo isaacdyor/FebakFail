@@ -1,8 +1,7 @@
 import "@repo/ui/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { GeistSans } from "geist/font/sans";
+import { cn } from "@repo/ui/lib/utils";
 
 export const metadata: Metadata = {
   title: "Docs",
@@ -15,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={cn(GeistSans.className, "dark")}>
+      <body>{children}</body>
     </html>
   );
 }
