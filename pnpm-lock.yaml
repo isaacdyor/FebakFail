@@ -81,9 +81,9 @@ importers:
 
   apps/web:
     dependencies:
-      '@repo/database':
+      '@repo/db':
         specifier: workspace:*
-        version: link:../../packages/database
+        version: link:../../packages/db
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -140,7 +140,7 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
 
-  packages/database:
+  packages/db:
     dependencies:
       dotenv:
         specifier: ^16.4.5
@@ -154,6 +154,9 @@ importers:
       postgres:
         specifier: ^3.4.4
         version: 3.4.4
+      zod:
+        specifier: ^3.23.8
+        version: 3.23.8
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
