@@ -2,6 +2,9 @@ import "@repo/ui/globals.css";
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { cn } from "@repo/ui/lib/utils";
+import { config } from "dotenv";
+
+config({ path: "../../.env" });
 
 export const metadata: Metadata = {
   title: "Docs",
